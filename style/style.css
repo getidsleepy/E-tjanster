@@ -1,0 +1,20 @@
+body{
+	background-color: blue;
+}
+
+.d1{
+	position: fixed;
+	width: 25%;
+}
+.d2{
+	position: fixed;
+	width: 25%;
+}
+.d3{
+	position: fixed;
+	width: 25%;
+}
+.d4{
+	position: fixed;
+	width: 25%;
+}

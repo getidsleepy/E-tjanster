@@ -10,22 +10,22 @@ body{
 .d1{
 
 	float: left;
-	width: 25%;
+	width: 50%;
 	background-color: red;
 	border-color: red;
 }
 .d2{
 
 	float: left;
-	width: 25%;
+	width: 75%;
 }
 .d3{
 
 	float: left;
-	width: 25%;
+	width: 100%;
 }
 .d4{
 
 	float: left;
-	width: 25%;
+	width: 150%;
 }

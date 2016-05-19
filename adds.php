@@ -7,6 +7,6 @@
     <title>Annonser</title>
 </head>
 <body>
-<!-- Hello -->
+<!-- Hello här ligger samtliga annonser uppe. På denna sida ska man även kunna söka efter saker    -->
 </body>
 </html>

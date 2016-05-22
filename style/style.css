@@ -21,3 +21,11 @@ h4{
 	max-width: 10%;
 	max-height: 10%;
 }
+.form-control{
+	margin-top: 2%;
+	margin-bottom: 8%;
+}
+
+label{
+	margin-top: 2%;
+}

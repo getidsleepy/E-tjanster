@@ -16,68 +16,64 @@
     <title>Ny annons</title>
 </head>
 <body>
-	<h1>Skapa ny annons</h1>
-	
-	<form id="newadd" action="newaddprocess.php" method="POST" onsubmit="" >
-		<label for="objekt">Vad lånar du ut?</label>
-		<p></p>
-		<input type="text" placeholder="Vad lånar du ut?" id="objekt" name="objekttolend" class="form-control"/>
-		<p></p>
-		
-		<label for="category">Vilken kategori tillhör objektet?</label>
-		<p></p>
-			<div class="radio">
-				<label><input type="radio" id="category"name="kategori" value="Verktyg & Maskiner">Verktyg & Maskiner</label>
-			</div>
-			<div class="radio">
-				<label><input type="radio" id="category"name="kategori" value="Fordon">Fordon</label>
-			</div>
-			<div class="radio">
-				<label><input type="radio" id="category"name="kategori" value="För hemmet">För hemmet</label>
-			</div>
-			<div class="radio">
-				<label><input type="radio" id="category"name="kategori" value="Personligt">Personligt</label>
-			</div>
-			<div class="radio">
-				<label><input type="radio" id="category"name="kategori" value="Elektronik">Elektronik</label>
-			</div>
-			<div class="radio">
-				<label><input type="radio" id="category"name="kategori" value="Bostad">Bostad</label>
-			</div>
-			<div class="radio">
-				<label><input type="radio" id="category"name="kategori" value="Fritid & Hobby">Fritid & Hobby</label>
-			</div>
-			<div class="radio">
-				<label><input type="radio" id="category"name="kategori" value="Övrigt" text="Övrigt">Övrigt</label>
-			</div>
-		
-		
-		
-		<!--<input type="text" placeholder="Kategori" id="category" name="kategori" class="form-control"/>-->
-		
-		<p></p>
-		<label for="time">Hur länge lånar du ut objektet som längst?</label>
-		<p></p>
-		<input type="text" placeholder="Dagar" id="time" name="dagar" class="form-control"/>
-		<p></p>
+	<div class="container-fluid">
+		<div class="page-header">
+		 	<h1>Skapa ny annons</h1>
+		</div>
+		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+			<form id="newadd" action="newaddprocess.php" method="POST" onsubmit="" >
+				<label for="objekt">Vad lånar du ut?</label>
+				<input type="text" placeholder="Vad lånar du ut?" id="objekt" name="objekttolend" class="form-control"/>
+
+				
+				<label for="category">Vilken kategori tillhör objektet?</label>
+					<div class="radio">
+						<label><input type="radio" id="category"name="kategori" value="Verktyg & Maskiner">Verktyg & Maskiner</label>
+					</div>
+					<div class="radio">
+						<label><input type="radio" id="category"name="kategori" value="Fordon">Fordon</label>
+					</div>
+					<div class="radio">
+						<label><input type="radio" id="category"name="kategori" value="För hemmet">För hemmet</label>
+					</div>
+					<div class="radio">
+						<label><input type="radio" id="category"name="kategori" value="Personligt">Personligt</label>
+					</div>
+					<div class="radio">
+						<label><input type="radio" id="category"name="kategori" value="Elektronik">Elektronik</label>
+					</div>
+					<div class="radio">
+						<label><input type="radio" id="category"name="kategori" value="Bostad">Bostad</label>
+					</div>
+					<div class="radio">
+						<label><input type="radio" id="category"name="kategori" value="Fritid & Hobby">Fritid & Hobby</label>
+					</div>
+					<div class="radio">
+						<label><input type="radio" id="category"name="kategori" value="Övrigt" text="Övrigt">Övrigt</label>
+					</div>
+				
+				
+				
+				<!--<input type="text" placeholder="Kategori" id="category" name="kategori" class="form-control"/>-->
+				
+				<label for="time">Hur länge lånar du ut objektet som längst?</label>
+				<input type="text" placeholder="Dagar" id="time" name="dagar" class="form-control"/>
+					
+				<label for="description">Beskrivning av objektet</label>
+				<input type="text" placeholder="Beskrivning" id="description" name="beskrivning" class="form-control"/>
+				
+				<label for="picture">Bildlänk till objektet(frivilligt)</label>
+				<input type="text" placeholder="Bildlänk" id="picture" name="bild"class="form-control"/>
+				
+				
+				<input type="submit" value="Publicera annons" id="publ" class="btn btn-primary"/>
+					
 			
-		<label for="description">Beskrivning av objektet</label>
-		<p></p>
-		<input type="text" placeholder="Beskrivning" id="description" name="beskrivning" class="form-control"/>
-		<p></p>	
-		
-		<label for="picture">Bildlänk till objektet(frivilligt)</label>
-		<p></p>
-		<input type="text" placeholder="Bildlänk" id="picture" name="bild"class="form-control"/>
-		<p></p>	
-		
-		
-		<input type="submit" value="Publicera annons" id="publ" class="btn btn-primary"/>
 			
-	
-	
-	
-	</form>
+			
+			</form>
+		</div>
+	</div>
 
 </body>
 </html>

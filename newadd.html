@@ -26,18 +26,37 @@
 		
 		<label for="category">Vilken kategori tillhör objektet?</label>
 		<p></p>
-		<input type="text" placeholder="Kategori" id="category" class="form-control"/>
+			<div class="radio">
+				<label><input type="radio" id="category"name="kategori" value="Fordon/Maskiner">Fordon/Maskiner</label>
+			</div>
+			<div class="radio">
+				<label><input type="radio" name="kategori" value="Trädgårdsverktyg">Trädgårdsverktyg</label>
+			</div>
+			<div class="radio">
+				<label><input type="radio" name="kategori" value="Övrigt" text="Övrigt">Övrigt</label>
+			</div>
+		
+		
+		
+		<!--<input type="text" placeholder="Kategori" id="category" name="kategori" class="form-control"/>-->
 		
 		<p></p>
 		<label for="time">Hur länge lånar du ut objektet som längst?</label>
 		<p></p>
-		<input type="text" placeholder="Dagar" id="time" class="form-control"/>
+		<input type="text" placeholder="Dagar" id="time" name="dagar" class="form-control"/>
 		<p></p>
 			
 		<label for="description">Beskrivning av objektet</label>
 		<p></p>
-		<input type="text" placeholder="Beskrivning" id="description" class="form-control"/>
+		<input type="text" placeholder="Beskrivning" id="description" name="beskrivning" class="form-control"/>
 		<p></p>	
+		
+		<label for="picture">Bildlänk till objektet(frivilligt)</label>
+		<p></p>
+		<input type="text" placeholder="Bildlänk" id="picture" name="bild"class="form-control"/>
+		<p></p>	
+		
+		
 		<input type="submit" value="Publicera annons" id="publ" class="btn btn-primary"/>
 			
 	

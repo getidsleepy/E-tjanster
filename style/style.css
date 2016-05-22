@@ -15,6 +15,29 @@ h4{
 }
 .page-header{
 	text-align: center;
+	align-content: center;
+}
+
+.navbar-brand img{
+	margin-top: -15px;
+	width: 70px;
+	height: 70px;
+}
+
+.navbar-default {
+    background-color: #FFF;
+}
+
+.navbar-default ul{
+	padding-top: 1%;
+}
+
+.navbar-form{
+	padding-top: 0.7%;
+}
+
+.navbar-form button{
+	padding-top: -50%;
 }
 
 .previewimg img{
@@ -25,7 +48,11 @@ h4{
 	margin-top: 2%;
 	margin-bottom: 8%;
 }
+.btn-group{
+	margin-top: -16%;
+}
 
 label{
 	margin-top: 2%;
 }
+

@@ -16,3 +16,8 @@ h4{
 .page-header{
 	text-align: center;
 }
+
+.previewimg img{
+	max-width: 10%;
+	max-height: 10%;
+}

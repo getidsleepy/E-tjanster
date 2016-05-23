@@ -10,7 +10,10 @@ if(!isset($_SESSION['anv']) || $_SESSION['anv'] === "")
 		header('Location: login.php');
 	}
 */
-
+	session_start();
+	require 'database.php';
+	
+	
 ?>
 
 <!DOCTYPE html>
@@ -21,6 +24,34 @@ if(!isset($_SESSION['anv']) || $_SESSION['anv'] === "")
     <title>Profil</title>
 </head>
 <body>
+
+
+		<?php
+			
+	
+	
+			$anvnamn = $_POST['Advertiser'];
+		
+	
+			$profil = GetProfile($anvnamn);
+			
+			echo $anvnamn;
+			if ($profil->num_rows > 0) 
+				{
+					//Nu är det avsändaren som ska visas som den som skrivit kommentaren, gör därför så att användarnamn och ev email syns istället för namn
+					while($row = $profil->fetch_assoc()) 
+					{
+						
+						echo '$anvnamn';
+
+					}
+				}
+		
+		
+		
+	
+	
+	?>
 
 
 	

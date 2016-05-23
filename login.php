@@ -14,49 +14,28 @@ Observera att det ska finnas en knapp som är av typen submit vilken genomför i
     <title>Logga in</title>
 </head>
 <body>
-	<div class="container-fluid">
-
-		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+	<h1>Logga in</h1>
+	<form id="Loginform" action="loginprocess.php" method="POST" onsubmit="" >
+		<label for="username">Vänligen skriv användarnamn</label>
+		<p></p>
+		<input type="text" placeholder="Användarnamn" id="username" name="username" class="form-control"/>
+		<p></p>
+		
+		<label for="password">Vänligen skriv lösenord</label>
+		<p></p>
+		<input type="password" placeholder="Lösenord" id="password" class="form-control"/>
+		
+		<p></p>
+		
+		<p></p>	
+		<input type="submit" value="Logga in" id="login" class="btn btn-primary"/>
 			
-		</div>
-		<div class="login-form">
-			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-				<h1>Logga in</h1>
-			<form id="Loginform" action="loginprocess.php" method="POST" onsubmit="" >
-				<label for="username">Vänligen skriv användarnamn</label>
-				<p></p>
-				<input type="text" placeholder="Användarnamn" id="username" name="username" class="form-control"/>
-				<p></p>
-				
-				<label for="password">Vänligen skriv lösenord</label>
-				<p></p>
-				<input type="password" placeholder="Lösenord" id="password" class="form-control"/>
-				
-				<p></p>
-				
-				<p></p>	
-				<input type="submit" value="Logga in" id="login" class="btn btn-primary"/>
-					
-			
-			
-			
-			</form>
-			<div class="reg-form">
-				<div class="row">
-				<label for="reg">Har du inget konto?</label>
-				</div>
-				<div class="row">
-				<a href="registration.html" class="btn btn-primary" id="reg">Registrera</a>
-				</div>
-					
-				</div>
-				
-				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-					
-				</div>
-			</div>
-		</div>
-		</div>
 	
+	
+	
+	</form>
+	<label for="reg">Har du inget konto?</label>
+	<a href="registration.html" class="btn btn-primary" id="reg">Registrera</a>
+
 </body>
 </html>

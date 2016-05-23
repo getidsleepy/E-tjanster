@@ -59,14 +59,7 @@ echo $echo;
 
 if(isset($_SESSION['betal'])):
 ?>
-	<form class="navbar-form navbar-left" action="profile.php"  method="POST" role="search">
-		
-		<input name="Advertiser" value="<?php $row["Advertiser"]  ?>"
-		<button type="submit" class="btn btn-default">Intresseanmälan</button>
-
-	</form>
-	
- <!--	<a href="profile.php" >Gör intreseanmälan</a> -->
+	<a href="intresse.php" >Gör intreseanmälan</a>
 <?php
 endif;
 ?>

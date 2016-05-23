@@ -43,10 +43,5 @@
 		
 	}
 
-	function GetProfile($anvNamn)
-	{
-		mysqli = connect();
-		return $mysqli->query("SELECT * FROM Anv WHERE Username = '$anvNamn' ")
-	}
 
 ?>

@@ -3,14 +3,7 @@
 subscription.php(här visas betalningssidan där man kan välja betalningsalternativ
 subscriptionprocess.php(här “genomförs betalningen”)-->
 
-<?php
-if(!isset($_SESSION['anv']) || $_SESSION['anv'] === "")
-	{
-		header('Location: login.php');
-	}
 
-
-?>
 
 <!DOCTYPE html>
 
@@ -20,14 +13,6 @@ if(!isset($_SESSION['anv']) || $_SESSION['anv'] === "")
     <title>Profil</title>
 </head>
 <body>
-	<h1>Profil</h1>
-
-	<p>Användarnamn</p>
-	
-	<h2>Rank</h2>
-	
-	
-	<p></p>
 
 </body>
 </html>

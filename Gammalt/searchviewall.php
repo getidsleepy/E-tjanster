@@ -26,25 +26,23 @@
  
 	<?php
 	
-			$sak = $_POST['search'];
-		
 	
-			$annonser = GetAddsAll($sak);
-			
-			
-			if ($annonser->num_rows > 0) 
+		
+		$sak = $_POST['search'];
+		
+		$annonser = GetAddsAll($sak);
+		
+		
+		if ($annonser->num_rows > 0) 
+			{
+				//Nu är det avsändaren som ska visas som den som skrivit kommentaren, gör därför så att användarnamn och ev email syns istället för namn
+				while($row = $annonser->fetch_assoc()) 
 				{
-					//Nu är det avsändaren som ska visas som den som skrivit kommentaren, gör därför så att användarnamn och ev email syns istället för namn
-					while($row = $annonser->fetch_assoc()) 
-					{
-						$bild = $row["Picture"];
-						echo '<div class="commentbox">' . 'Pryl: ' . $row["Thing"] . '<br>'. 'Bild: ' . '<div class="previewimg">' . '<img src="'.$bild.'">' . '</div>' . '<br>' . 'Beskrivning: ' . $row["Description"] . '<br>' . 'Annonsör: ' . $row["Advertiser"] . '<br>' . 'Kategori: ' . $row["Category"] . '<br>' . '<br>' .'</div>';
+					$bild = $row["Picture"];
+					echo '<div class="commentbox">' . 'Pryl: ' . $row["Thing"] . '<br>'. 'Bild: ' . '<div class="previewimg">' . '<img src="'.$bild.'">' . '</div>' . '<br>' . 'Beskrivning: ' . $row["Description"] . '<br>' . 'Annonsör: ' . $row["Advertiser"] . '<br>' . 'Kategori: ' . $row["Category"] . '<br>' . '<br>' .'</div>';
 
-					}
 				}
-		
-		
-		
+			}
 	
 	
 	?>

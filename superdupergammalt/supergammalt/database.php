@@ -25,16 +25,6 @@
 		return $mysqli->query("SELECT *  FROM Annonser WHERE Thing LIKE '%$Pryl%'");
 	}
 	
-	
-	function GetAll()
-	{
-		$mysqli = connect();
-		return $mysqli->query("SELECT *  FROM Annonser");
-
-	
-	
-	}
-	
 	function InsertAdd($Kategori, $Pryl, $Bild, $Beskrivning, $Annonsör, $Dagar) 
 	{
 		$mysqli = connect();
@@ -43,10 +33,5 @@
 		
 	}
 
-	function GetProfile($anvNamn)
-	{
-		mysqli = connect();
-		return $mysqli->query("SELECT * FROM Anv WHERE Username = '$anvNamn' ")
-	}
 
 ?>

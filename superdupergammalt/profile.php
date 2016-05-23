@@ -21,21 +21,11 @@ if(!isset($_SESSION['anv']) || $_SESSION['anv'] === "")
     <title>Profil</title>
 </head>
 <body>
-
-
-	
-
 	<h1>Profil</h1>
 
 	<p>Användarnamn</p>
 	
-	<p>Rank</p>
-	
-	<h2>Mina annonser</h2>
-	
-	<p>Telefonnummer?</p>
-	
-	
+	<h2>Rank</h2>
 	
 	
 	<a href="subscription.php">Betala</a>

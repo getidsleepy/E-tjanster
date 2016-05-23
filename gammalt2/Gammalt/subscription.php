@@ -10,10 +10,5 @@
 </head>
 <body>
 
-
-
-<a href="subscriptionprocess.php">Betala</a>
-
-
 </body>
 </html>

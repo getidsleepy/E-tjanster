@@ -1,6 +1,6 @@
 <?php
 	//Sök efter någon pryl i alla kategorier
-
+	session_start();
 	require 'database.php';
 	
 	
@@ -23,8 +23,10 @@
 </head>
 <body>
 
- 
+  
 	<?php
+	
+	
 	
 			$sak = $_POST['search'];
 		
@@ -49,11 +51,18 @@
 	
 	?>
 
+<?php
 
+$echo = $_SESSION['betal'];
 
+echo $echo;
 
-
-
+if(isset($_SESSION['betal'])):
+?>
+	<a href="intresse.php" >Gör intreseanmälan</a>
+<?php
+endif;
+?>
 
 </body>
 </html>

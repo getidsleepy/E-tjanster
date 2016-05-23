@@ -4,12 +4,11 @@ subscription.php(här visas betalningssidan där man kan välja betalningsaltern
 subscriptionprocess.php(här “genomförs betalningen”)-->
 
 <?php
-/*
 if(!isset($_SESSION['anv']) || $_SESSION['anv'] === "")
 	{
 		header('Location: login.php');
 	}
-*/
+
 
 ?>
 
@@ -28,7 +27,7 @@ if(!isset($_SESSION['anv']) || $_SESSION['anv'] === "")
 	<h2>Rank</h2>
 	
 	
-	<a href="subscription.php">Betala</a>
+	<p></p>
 
 </body>
 </html>

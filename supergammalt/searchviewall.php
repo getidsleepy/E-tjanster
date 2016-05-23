@@ -1,6 +1,6 @@
 <?php
 	//Sök efter någon pryl i alla kategorier
-	session_start();
+
 	require 'database.php';
 	
 	
@@ -22,17 +22,14 @@
     <title>Annonser</title>
 </head>
 <body>
-<h1>Alla annonser</h1>
 
  
 	<?php
 	
-	
-	
-			
+			$sak = $_POST['search'];
 		
 	
-			$annonser = GetAll();
+			$annonser = GetAddsAll($sak);
 			
 			
 			if ($annonser->num_rows > 0) 
@@ -52,29 +49,11 @@
 	
 	?>
 
-<?php
 
-$echo = $_SESSION['betal'];
 
-echo $echo;
 
-if(isset($_SESSION['betal'])):
-?>
-	<a href="intresse.php" >Gör intreseanmälan</a>
-<?php
-endif;
-?>
+
+
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-

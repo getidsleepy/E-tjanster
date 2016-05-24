@@ -21,7 +21,7 @@ Observera att det ska finnas en knapp som är av typen submit vilken genomför i
 		</div>
 		<div class="login-form">
 			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-				<h1>Logga in</h1>
+				<h1>Loggaa in</h1>
 			<form id="Loginform" action="loginprocess.php" method="POST" onsubmit="" >
 				<label for="username">Vänligen skriv användarnamn</label>
 				<p></p>

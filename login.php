@@ -14,7 +14,6 @@ Observera att det ska finnas en knapp som är av typen submit vilken genomför i
     <title>Logga in</title>
 </head>
 <body>
-<<<<<<< HEAD
 	<div class="container-fluid">
 
 		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
@@ -22,48 +21,29 @@ Observera att det ska finnas en knapp som är av typen submit vilken genomför i
 		</div>
 		<div class="login-form">
 			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-				<h1>Loggaa in</h1>
-			<form id="Loginform" action="loginprocess.php" method="POST" onsubmit="" >
-				<label for="username">Vänligen skriv användarnamn</label>
-				<p></p>
-				<input type="text" placeholder="Användarnamn" id="username" name="username" class="form-control"/>
-				<p></p>
-				
-				<label for="password">Vänligen skriv lösenord</label>
-				<p></p>
-				<input type="password" placeholder="Lösenord" id="password" class="form-control"/>
-				
-				<p></p>
-				
-				<p></p>	
-				<input type="submit" value="Logga in" id="login" class="btn btn-primary"/>
+				<div class="row">
+					<h1>Logga in</h1>
+				<form id="Loginform" action="loginprocess.php" method="POST" onsubmit="" >
+					<label for="username">Vänligen skriv användarnamn</label>
+					<input type="text" placeholder="Användarnamn" id="username" name="username" class="form-control"/>
 					
-			
-			
-=======
-	<h1>Logga in</h1>
-	<form id="Loginform" action="loginprocess.php" method="POST" onsubmit="" >
-		<label for="username">Vänligen skriv användarnamn</label>
-		<p></p>
-		<input type="text" placeholder="Användarnamn" id="username" name="username" class="form-control"/>
-		<p></p>
-		
-		<label for="password">Vänligen skriv lösenord</label>
-		<p></p>
-		<input type="password" placeholder="Lösenord" id="password" class="form-control"/>
-		
-		<p></p>
-		
-		<p></p>	
-		<input type="submit" value="Logga in" id="login" class="btn btn-primary"/>
->>>>>>> c65c4d6e4cfe439dbd7923fd8c04486e183e3c61
-			
-	
-	
-	
-	</form>
-	<label for="reg">Har du inget konto?</label>
-	<a href="registration.html" class="btn btn-primary" id="reg">Registrera</a>
+					<label for="password">Vänligen skriv lösenord</label>
+					<input type="password" placeholder="Lösenord" id="password" class="form-control"/>
+					<input type="submit" value="Logga in" id="login" class="btn btn-primary"/>
+				</form>
+				</div>
+				<div class="row">
+					<br>
+					<label for="reg">Har du inget konto?</label>
+				</div>
+				<div class="row">
+					<a href="registration.html" class="btn btn-primary" id="reg">Registrera</a>
+				</div>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				
+			</div>
+	</div>
 
 </body>
 </html>

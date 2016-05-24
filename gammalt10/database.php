@@ -25,14 +25,6 @@
 		return $mysqli->query("SELECT *  FROM Annonser WHERE Thing LIKE '%$Pryl%'");
 	}
 	
-	function GetProfAdds($User)
-	{
-		$mysqli = connect();
-		return $mysqli->query("SELECT *  FROM Annonser WHERE Advertiser = '$User' ");
-
-	
-	
-	}
 	
 	function GetAll()
 	{

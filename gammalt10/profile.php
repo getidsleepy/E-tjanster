@@ -35,37 +35,20 @@ if(!isset($_SESSION['anv']) || $_SESSION['anv'] === "")
 	
 			$profil = GetProfile($anvnamn);
 			
-			//echo $anvnamn;
+			echo $anvnamn;
 			if ($profil->num_rows > 0) 
 				{
 					//Nu är det avsändaren som ska visas som den som skrivit kommentaren, gör därför så att användarnamn och ev email syns istället för namn
 					while($row = $profil->fetch_assoc()) 
 					{
 						
-						echo $anvnamn . $row['Email'] . $row['Tele'] ;
+						echo '$anvnamn';
 
 					}
 				}
 		
 		
-			$minaAnnonser = GetProfAdds($anvnamn);
-			echo "Bajs";
-			
-			if ($minaAnnonser->num_rows > 0) 
-				{
-					//Nu är det avsändaren som ska visas som den som skrivit kommentaren, gör därför så att användarnamn och ev email syns istället för namn
-					while($row = $minaAnnonser->fetch_assoc()) 
-					{
-						$bild = $row["Picture"];
-						echo '<form class="navbar-form navbar-left" action="profile.php"  method="POST" role="search"> 		<input type="hidden" name="Advertiser" value="Roy"> <button type="submit" class="btn btn-default">Intresseanmälan</button>
-						</form>' .'<div class="commentbox">' . 'Pryl: ' . $row["Thing"] . '<br>'. 'Bild: ' . '<div class="previewimg">' . '<img src="'.$bild.'">' . '</div>' . '<br>' . 'Beskrivning: ' . $row["Description"] . '<br>' . 'Annonsör: ' . $row["Advertiser"] . '<br>' . 'Kategori: ' . $row["Category"] . '<br>' . '<br>' .'</div>';
-
-						//Vi behöver ett form för varje annons
-						
-						
-						
-					}
-				}
+		
 	
 	
 	?>

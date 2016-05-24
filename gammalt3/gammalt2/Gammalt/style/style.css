@@ -1,0 +1,23 @@
+.col{
+	text-align: center;
+	align-content: center;
+}
+.pull-right{
+	float: right !important;
+}
+.btn-group{
+  bottom: 15px;
+  position: relative;
+  top: 15px;
+}
+h4{
+	text-align: center;
+}
+.page-header{
+	text-align: center;
+}
+
+.previewimg img{
+	max-width: 10%;
+	max-height: 10%;
+}

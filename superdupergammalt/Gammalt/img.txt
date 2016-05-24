@@ -1,6 +1,0 @@
-<img src="http://d3ro3kdz1flj2n.cloudfront.net/cdon/images/icon/payment-VISA.gif?f787f0fa">
-			<img src="http://d3ro3kdz1flj2n.cloudfront.net/cdon/images/icon/payment-MASTERCARD.gif?3b780e73">
-
-
-
-https://github.com/getidsleepy/E-tjanster/blob/master/newadd.html

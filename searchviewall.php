@@ -49,9 +49,7 @@
 		
 	
 	
-	?>
 
-<?php
 
 $echo = $_SESSION['betal'];
 
@@ -60,8 +58,9 @@ echo $echo;
 if(isset($_SESSION['betal'])):
 ?>
 	<form class="navbar-form navbar-left" action="profile.php"  method="POST" role="search">
-		
-		<input name="Advertiser" value="<?php $row["Advertiser"]  ?>"
+		<input type="hidden" name="Advertiser" value="Roy">
+		<!--<input type="text" class="form-control" name="Adv" placeholder="vänligen skriv annonsörens användarnamn och tryck sedan på intreseanmälan">-->
+		<!-- <input  name="Advertiser" value="<?php $row["Advertiser"]  ?>"> -->
 		<button type="submit" class="btn btn-default">Intresseanmälan</button>
 
 	</form>

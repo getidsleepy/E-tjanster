@@ -1,0 +1,73 @@
+
+
+
+<!--På denna sida registrerar sig en användare, hit kommer man genom att exempelvis trycka på "registrera"-knappen som finns på inloggningssidan-->
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" href="style/style.css">
+	
+	
+    <title>Registrera</title>
+</head>
+<body>
+	<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+			
+		</div>
+		<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+			<h1>Registrera</h1>
+				
+				<form id="regform" action="registrationprocess.php" method="POST" onsubmit="" >
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+					<label for="chuser">Vänligen välj användarnamn</label>
+					<input type="text" placeholder="Användarnamn" id="chuser" name="username" class="form-control"/>
+					
+					<label for="chpass">Vänligen välj lösenord</label>
+					<input type="password" placeholder="Lösenord" id="chpass" name="password" class="form-control"/>
+					
+					<label for="chemail">Vänligen skriv mailadress</label>
+					<input type="email" placeholder="Mailadrass" id="chmail" name="email" class="form-control"/>
+					<label for="chtele">Vänligen skriv telefonnummer</label>
+					<input type="text" placeholder="Telefonnummer" id="chtele" name="tele" class="form-control"/>
+				</div>
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+					<label for="chsocialsec">Vänligen skriv personnummer*</label>
+					<input type="text" placeholder="Personnummer" id="chsocialsec" class="form-control"/>
+					
+					<label for="chsocialsec">Vänligen skriv Förnamn*</label>
+					<input type="text" placeholder="Förnamn" id="choosenfirstname" class="form-control"/>
+					
+					<label for="chsocialsec">Vänligen skriv Efternamn*</label>
+					<input type="text" placeholder="Efternamn" id="chslastname" class="form-control"/>
+					
+					<label for="chsocialsec">Vänligen skriv adress*</label>
+					<input type="text" placeholder="Address" id="chadress" class="form-control"/>
+				</div>
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+					<label for="chsocialsec">Vänligen skriv Stad*</label>
+					<input type="text" placeholder="Stad" id="chcity" class="form-control"/>
+					
+					<label for="chsocialsec">Vänligen skriv postnummer*</label>
+					<input type="text" placeholder="Postnummer" id="chpostnum" class="form-control"/>
+
+					<p>*Alla uppgifter markerade med * är inte obligatoriska men kommer att höja dina trovärdighetspoäng.
+					</p>
+					<input type="submit" value="Skapa konto" id="createaccount" class="btn btn-primary"/>
+				</div>
+				</form>
+		</div>
+		<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+			
+		</div>
+	</div>	
+	</div>
+</body>
+</html>

@@ -42,7 +42,7 @@ if(!isset($_SESSION['anv']) || $_SESSION['anv'] === "")
 		    				<span class="icon-bar"></span>
 		    				<span class="icon-bar"></span>
 		    			</button>
-		    			<a class="navbar-brand" href="index.html"><img src="Design/logo2.png" class="img-responsive" alt="Image"></a>
+		    			<a class="navbar-brand" href="index.php"><img src="Design/logo2.png" class="img-responsive" alt="Image"></a>
 		    		</div>
 		    
 		    		<!-- Collect the nav links, forms, and other content for toggling -->
@@ -131,8 +131,8 @@ if(!isset($_SESSION['anv']) || $_SESSION['anv'] === "")
 					while($row = $minaAnnonser->fetch_assoc()) 
 					{
 						$bild = $row["Picture"];
-						echo '<form class="navbar-form navbar-left" action="profile.php"  method="POST" role="search"> 		<input type="hidden" name="Advertiser" value="Roy"> <button type="submit" class="btn btn-default">Intresseanmälan</button>
-						</form>' .'<div class="commentbox-profile">' . 'Pryl: ' . $row["Thing"] . '<br>'. 'Bild: ' . '<div class="previewimg">' . '<img src="'.$bild.'">' . '</div>' . '<br>' . 'Beskrivning: ' . $row["Description"] . '<br>' . 'Annonsör: ' . $row["Advertiser"] . '<br>' . 'Kategori: ' . $row["Category"] . '<br>' . '<br>'.'</div>';
+						echo '<form class="navbar-form navbar-left" action="profile.php"  method="POST" role="search"> 		<input type="hidden" name="Advertiser" value="Roy">
+						</form>' .'<div class="commentbox-profile">' .'<br>'. 'Pryl: ' . $row["Thing"] . '<br>'. 'Bild: ' . '<div class="previewimg">' . '<img src="'.$bild.'">' . '</div>' . '<br>' . 'Beskrivning: ' . $row["Description"] . '<br>' . 'Annonsör: ' . $row["Advertiser"] . '<br>' . 'Kategori: ' . $row["Category"] . '<br>' . '<br>'.'</div>';
 
 						//Vi behöver ett form för varje annons
 						

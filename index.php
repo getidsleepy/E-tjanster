@@ -8,6 +8,11 @@
 	{
 		?><script>alert("ingen session igång"); </script><?php
 	}
+	
+	if(isset($_SESSION['admin']))
+	{
+		?><script>alert("Admin-mode"); </script><?php
+	}
 ?>
 
 
@@ -48,6 +53,8 @@
 		    				<li><a href="#">About</a></li>
 		    				<li><a href="myprofile.php">Min profil</a></li>
 							<li><a href="logout.php">Log out</a></li>
+							<li><a href="admin.php">Admin</a></li>
+
 
 		    			</ul>
 		    			<form class="navbar-form navbar-left" action="searchviewall.php"  method="POST" role="search">
@@ -55,12 +62,14 @@
 		    					<input type="text" class="form-control" name="search" placeholder="Sök">
 		    				</div>
 		    				<div class="btn-group">
-		    				<button type="submit" class="btn btn-default">Sök</button>
+		    				<button type="submit" class="btn btn-default">Sök/Visa alla annonser(om sökruta ej ifylld)</button>
 		    				</div>
 		    			</form>
+						<!--
 						<form class="navbar-form navbar-left" action="adds.php"  method="POST" role="search">
 							<button type="submit" class="btn btn-default">Visa alla annonser</button>
 						</form>
+						-->
 		    			<ul class="nav navbar-nav navbar-right">
 		    				<li><a href="newadd.php">Skapa ny annons</a></li>
 		    				<li><a href="login.php">Logga in</a></li>
@@ -71,6 +80,37 @@
 		    </nav>
 		    </div>
 		  </section>
+		  <p>Kategorier: </p>
+		  
+		  <form name="" action="categoryadds.php" method="POST">
+		   
+		   <input type="radio" name="category" value="Verktyg & Maskiner">Verktyg & Maskiner<br>
+		   <input type="radio" name="category" value="Fordon">Fordon<br>
+		   <input type="radio" name="category" value="För hemmet">För hemmet<br>
+		   <input type="radio" name="category" value="Personligt">Personligt<br>
+		   <input type="radio" name="category" value="Elektronik">Elektronik<br>
+		   <input type="radio" name="category" value="Bostad">Bostad<br>
+		   <input type="radio" name="category" value="Fritid & Hobby">Fritid & Hobby<br>
+		   <input type="radio" name="category" value="Övrigt">Övrigt<br>
+		   
+		   <button type="submit" class="btn btn-default">Visa vald kategori</button>
+<!--
+		  <a href="">Verktyg & Maskiner</a>
+		  <a href="">Fordon</a>
+		  <a href="">För hemmet</a>
+		  <a href="">Personligt</a>
+		  <a href="">Elektronik</a>
+		  <a href="">Bostad</a>
+		  <a href="">Fritid & Hobby</a>
+		  <a href="">Övrigt</a>
+		  -->
+		 
+
+		  </form>
+		  
+		  
+		  
+		  
 		  <div class="panel panel-default">
 		  	<div class="panel-footer">
 		  		<div class="row">

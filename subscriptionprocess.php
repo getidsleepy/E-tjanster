@@ -7,7 +7,7 @@
 
 	session_start();
 	$_SESSION['betal'] = "Betalat";
-	header('Location: index.html');
+	header('Location: index.php');
 
 
 

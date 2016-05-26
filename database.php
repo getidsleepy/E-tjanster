@@ -20,11 +20,52 @@
 	}
 
 	
+	function GetCategory($category)
+	{
+		
+		$mysqli = connect();
+		return $mysqli->query("SELECT *  FROM Annonser WHERE Category = '$category'");
+	
+	}
+	function DeleteAdd($addID)
+	{
+		$mysqli = connect();
+		return $mysqli->query("DELETE FROM Annonser WHERE ID = '$addID'");
+		
+		//DELETE FROM table_name
+		//WHERE some_column=some_value;
+		
+	}
+	
+	function DeleteInterest($advertiser)
+	{
+		$mysqli = connect();
+		return $mysqli->query("DELETE FROM Intresse WHERE Advertiser = '$advertiser'");
+	
+	}
+	
+	
+	function EditAdd()
+	{
+	
+	
+	
+	}
+	
 	function GetAllUsers()
 	{
 	
 		$mysqli = connect();
 		return $mysqli->query("SELECT *  FROM Anv");
+	
+	
+	}
+	
+	function GetAdmin()
+	{
+	
+		$mysqli = connect();
+		return $mysqli->query("SELECT *  FROM Admin");
 	
 	
 	}

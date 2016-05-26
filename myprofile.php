@@ -59,8 +59,11 @@
 		
 		
 	?>
-	
-	
+	<form action="cleanprocess.php" method="POST" >
+		<input type="hidden" name="rensa" value="<?php echo $_SESSION['username'] ?>">
+		<button type="submit">Rensa intresseanmälningar</button>
+		
+	</form>
  <!--	<button onclick="return delete();" ></button> -->
 
 </body>

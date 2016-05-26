@@ -28,7 +28,7 @@ Observera att det ska finnas en knapp som är av typen submit vilken genomför i
 					<input type="text" placeholder="Användarnamn" id="username" name="username" class="form-control"/>
 					
 					<label for="password">Vänligen skriv lösenord</label>
-					<input type="password" placeholder="Lösenord" id="password" class="form-control"/>
+					<input type="password" placeholder="Lösenord" id="password" name="password" class="form-control"/>
 					<input type="submit" value="Logga in" id="login" class="btn btn-primary"/>
 				</form>
 				</div>

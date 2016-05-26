@@ -35,7 +35,7 @@
 		    				<span class="icon-bar"></span>
 		    				<span class="icon-bar"></span>
 		    			</button>
-		    			<a class="navbar-brand" href="#"><img src="Design/logo2.png" class="img-responsive" alt="Image"></a>
+		    			<a class="navbar-brand" href="index.html"><img src="Design/logo2.png" class="img-responsive" alt="Image"></a>
 		    		</div>
 		    
 		    		<!-- Collect the nav links, forms, and other content for toggling -->
@@ -84,8 +84,8 @@
 					while($row = $annonser->fetch_assoc()) 
 					{
 						$bild = $row["Picture"];
-						echo '<form class="navbar-form navbar-left" action="profile.php"  method="POST" role="search"> 		<input type="hidden" name="Advertiser" value="Roy"> <button type="submit" class="btn btn-default">Intresseanmälan</button>
-						</form>' .'<div class="commentbox">' . 'Pryl: ' . $row["Thing"] . '<br>'. 'Bild: ' . '<div class="previewimg">' . '<img src="'.$bild.'">' . '</div>' . '<br>' . 'Beskrivning: ' . $row["Description"] . '<br>' . 'Annonsör: ' . $row["Advertiser"] . '<br>' . 'Kategori: ' . $row["Category"] . '<br>' . '<br>' .'</div>';
+						echo '<form class="navbar-form navbar-left" action="profile.php"  method="POST" role="search"> 		<input type="hidden" name="Advertiser" value="Roy">
+						'.'<div class="commentbox">' .'<br>'. 'Pryl: ' . $row["Thing"] . '<br>'. 'Bild: ' . '<div class="previewimg">' . '<img src="'.$bild.'">' . '</div>' . '<br>' . 'Beskrivning: ' . $row["Description"] . '<br>' . 'Annonsör: ' . $row["Advertiser"] . '<br>' . 'Kategori: ' . $row["Category"] . '<br>' . '<br>' . ' <button type="submit" class="btn btn-default">Intresseanmälan</button>' . '</div>';
 
 						//Vi behöver ett form för varje annons
 						
@@ -121,6 +121,7 @@ if(isset($_SESSION['betal'])):
 <?php
 endif;
 ?>
+</div>
 </section>
 <section>
 <div class="panel panel-default">

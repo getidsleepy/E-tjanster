@@ -1,5 +1,8 @@
-
-
+<?php if(!isset($_SESSION['username']) || $_SESSION['username'] === "")
+	{
+		header('Location: login.php');
+	}
+?>
 <!-- på denna sida lägger man till ny annons, i newaddprocess, läggs den rent fysiskt till-->
 
 <!DOCTYPE html>

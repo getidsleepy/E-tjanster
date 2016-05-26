@@ -19,6 +19,16 @@
 		
 	}
 
+	
+	function GetAllUsers()
+	{
+	
+		$mysqli = connect();
+		return $mysqli->query("SELECT *  FROM Anv");
+	
+	
+	}
+	
 	function GetAddsAll($Pryl)
 	{
 		$mysqli = connect();
@@ -43,12 +53,41 @@
 	
 	}
 	
+	function GetUserLogin($DB, $Kolumn, $Is) 
+	{
+		$mysqli = connect();
+		return $mysqli->query("SELECT * FROM $DB WHERE $Kolumn = '$Is'");
+	}
+	
+	
 	function InsertAdd($Kategori, $Pryl, $Bild, $Beskrivning, $Annonsör, $Dagar) 
 	{
 		$mysqli = connect();
 		
 		return $mysqli->query("INSERT INTO Annonser (Thing,Picture,Description, Advertiser, Category, Days)VALUES ('$Pryl','$Bild','$Beskrivning','$Annonsör', '$Kategori', '$Dagar')");
 		
+	}
+	
+	function InsertIntrest($intressent, $objekt, $text, $annonsör)
+	{
+		$mysqli = connect();
+		
+		return $mysqli->query("INSERT INTO Intresse (Advertiser,Object,Text, Stakeholder)VALUES ('$annonsör','$objekt','$text','$intressent')");
+		
+		
+		
+	
+	}
+	
+	function InsertUSER($user, $password, $email, $phone)
+	{
+		$mysqli = connect();
+		
+		return $mysqli->query("INSERT INTO Anv (Username,Password,Email, Tele)VALUES ('$user','$password','$email','$phone')");
+		
+		//Username	Password	Email	Personnummer	Firstname	Lastname	Adress	Stad	Postnummer	Tele
+		
+	
 	}
 
 	function GetProfile($anvNamn)
@@ -57,4 +96,11 @@
 		return $mysqli->query("SELECT * FROM Anv WHERE Username = '$anvNamn' ");
 	}
 
+	function GetInterest($Adv)
+	{
+		$mysqli = connect();
+		return $mysqli->query("SELECT * FROM Intresse WHERE Advertiser = '$Adv' ");
+	
+	}
+	
 ?>

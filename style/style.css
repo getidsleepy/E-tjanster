@@ -41,8 +41,8 @@ h4{
 }
 
 .previewimg img{
-	max-width: 10%;
-	max-height: 10%;
+	max-width: 30%;
+	max-height: 30%;
 }
 .form-control{
 	margin-top: 2%;
@@ -66,4 +66,18 @@ label{
 
 .reg-form{
 	margin-top: 5%;
+}
+
+.commentbox{
+	width: 100%;
+	padding-top: 1%;
+	padding-bottom: 2%;
+	border-bottom: 1px solid #ddd;
+}
+
+.commentbox-profile{
+	width: 100%;
+	padding-top: 1%;
+	padding-bottom: 2%;
+	border-bottom: 1px solid #ddd;
 }
